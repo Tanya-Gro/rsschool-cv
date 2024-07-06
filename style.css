@@ -1,0 +1,14 @@
+* {
+    margin: 5px 5px;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    /* list-style-position: inside; */
+    list-style-type: none;
+    text-align: center;
+}
