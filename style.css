@@ -1,6 +1,14 @@
 * {
-    margin: 5px 5px;
+    box-sizing: border-box;
+}
+
+.header,
+.main,
+.footer {
+    border: 1px solid red;
     text-align: center;
+    /* margin: 5px 5px;
+    margin-block-start: 5px; */
 }
 
 ul {
