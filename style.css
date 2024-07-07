@@ -20,3 +20,8 @@ li {
     list-style-type: none;
     text-align: center;
 }
+
+.rsslogo {
+    width: 120px;
+    height: 45px;
+}

@@ -10,39 +10,105 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="header-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                <li class="nav-item"><a href="#aboutMe">About me</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#codeExamples">Code examples</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </header>
     <main class="main">
         <div>
-            <img src="./assets/girl.jpg" alt="my avatar">
-            <h1>≡ Tatiana Grosul ≡</h1>
+            <section>
+                <img src="./assets/girl.jpg" alt="my avatar">
+                <h1>≡ Tatiana Grosul ≡</h1>
 
-            <p>Junior Frontend Developer</p>
-            <br>
-            <h2>Location:</h2>
-            <p> Tiraspol, Moldova</p>
-            <br>
-            <h2>Contacts:</h2>
-            <ul>
-                <li><b>Phone:</b> +373 77 745275</li>
-                <li><b>E-mail:</b> tarpel.gta@gmail.com</li>
-                <li><b>Telegram:</b> @tanya_gro</li>
-                <li><a href="https://github.com/Tanya-Gro"><b>GitHub</b></a></li>
-                <li><a
-                        href="https://www.linkedin.com/in/%D1%82%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%BD%D0%B0-%D0%B3%D1%80%D0%BE%D1%81%D1%83%D0%BB-006036249/"><b>LinkedIn</b></a>
-                </li>
-            </ul>
-            <br>
-            <h2>About me:</h2>
-            <p> The best person with great ambitions in programming.</p>
-            <br>
-            <h2>Code example:</h2>
-            <p>console.log("Hello world");</p>
-            <br>
-            <h2>Education:</h2>
-            <p>2005, Unversity</p>
+                <p>Junior Frontend Developer</p>
+            </section>
+
+            <section id="contacts">
+                <h2>Contacts:</h2>
+                <ul>
+                    <li><b>Location:</b> Tiraspol, Moldova</li>
+                    <li><b>Phone:</b> +373 77 745275</li>
+                    <li><b>E-mail:</b> tarpel.gta@gmail.com</li>
+                    <li><b>Telegram:</b> @tanya_gro</li>
+                    <li><a href="https://github.com/Tanya-Gro"><b>GitHub</b></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/in/%D1%82%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%BD%D0%B0-%D0%B3%D1%80%D0%BE%D1%81%D1%83%D0%BB-006036249/"><b>LinkedIn</b></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="aboutMe">
+                <h2>About me:</h2>
+                <p> The best person with great ambitions in programming.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>Test Design</li>
+                    <li>MS SQL</li>
+                    <li>HTML,CSS</li>
+                    <li>Java Script</li>
+                    <li>Languages:
+                        <ul>
+                            <li>Russian (native)</li>
+                            <li>English (pre-intermediate)</li>
+                            <li>Romanian (basic)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="codeExamples">
+                <h2>Code example:</h2>
+                <p>console.log("Hello world");</p>
+                <p>SELECT Result.maker, AVG(result.hd)<br>
+                    FROM (SELECT PC.hd, Product.maker<br>
+                    FROM PC INNER JOIN<br>
+                    Product ON PC.model = Product.model<br>
+                    WHERE Product.maker IN (SELECT Product1.maker<br>
+                    FROM Product Product1 INNER JOIN<br>
+                    Printer ON Product1.model = Printer.model<br>
+                    GROUP BY Product1.maker<br>
+                    )) AS result<br>
+                    GROUP BY result.maker
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects:</h2>
+                <a href="https://Tanya-Gro.github.io/rsschool-cv/">CV</a>
+            </section>
+
+            <section id="education">
+                <h2>Education:</h2>
+                <ul>
+                    <li>2007, Unversity</li>
+                    <li>2023, Manual Testing Course</li>
+                    <li>2024, HTML for JS Developers</li>
+                </ul>
+            </section>
+
         </div>
     </main>
-    <footer class="footer"></footer>
+
+
+    <footer class="footer">
+        <div>
+            <span>Made by Tanya-Gro in 2024</span>
+            <a href="https://github.com/Tanya-Gro"><b>My GitHub</b></a>
+            <a href="https://rs.school/courses/javascript"><img src="./assets/rs-school-logo.svg" class="rsslogo"
+                    alt="RSS Logo"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
