@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <div class="header-container">
+        <nav class="header-container">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#contacts">Contacts</a></li>
                 <li class="nav-item"><a href="#aboutMe">About me</a></li>
@@ -20,7 +20,7 @@
                 <li class="nav-item"><a href="#projects">Projects</a></li>
                 <li class="nav-item"><a href="#education">Education</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main class="main">
         <div>
@@ -35,8 +35,8 @@
                 <h2>Contacts:</h2>
                 <ul>
                     <li><b>Location:</b> Tiraspol, Moldova</li>
-                    <li><b>Phone:</b> +373 77 745275</li>
                     <li><b>E-mail:</b> tarpel.gta@gmail.com</li>
+                    <li><b>Discord:</b>@Tanya-Gro</li>
                     <li><b>Telegram:</b> @tanya_gro</li>
                     <li><a href="https://github.com/Tanya-Gro"><b>GitHub</b></a></li>
                     <li><a
@@ -57,7 +57,7 @@
                     <li>~ MS SQL</li>
                     <li>~ HTML,CSS</li>
                     <li>~ Java Script</li>
-                    <li>~ Languages:
+                    <li>~ <u>Languages</u>:
                         <ul>
                             <li>Russian (native)</li>
                             <li>English (pre-intermediate)</li>
@@ -69,18 +69,24 @@
 
             <section id="codeExamples">
                 <h2>Code example:</h2>
-                <p>console.log("Hello world");</p>
-                <p>SELECT Result.maker, AVG(result.hd)<br>
-                    FROM (SELECT PC.hd, Product.maker<br>
-                    FROM PC INNER JOIN<br>
-                    Product ON PC.model = Product.model<br>
-                    WHERE Product.maker IN (SELECT Product1.maker<br>
-                    FROM Product Product1 INNER JOIN<br>
-                    Printer ON Product1.model = Printer.model<br>
-                    GROUP BY Product1.maker<br>
-                    )) AS result<br>
-                    GROUP BY result.maker
-                </p>
+                <!-- <div > -->
+                <div class="example">
+                    <code data-language="JavaScript">
+                        console.log("Hello world");
+                    </code>
+                </div>
+                <div class="example">
+                    <code>
+                    SELECT Result.maker, AVG(result.hd) <br>
+                    FROM (SELECT PC.hd, Product.maker <br>
+                    &nbsp;FROM PC INNER JOIN Product ON PC.model = Product.model <br>
+                    &nbsp;&nbsp;WHERE Product.maker IN (SELECT Product1.maker <br>
+                    &nbsp;&nbsp;                       FROM Product Product1 INNER JOIN Printer ON Product1.model = Printer.model <br>
+                    &nbsp;&nbsp;                       GROUP BY Product1.maker ) <br>
+                    &nbsp;) AS result <br>
+                    GROUP BY result.maker <br>
+                </code>
+                </div>
             </section>
 
             <section id="projects">
@@ -91,9 +97,11 @@
             <section id="education">
                 <h2>Education:</h2>
                 <ul>
-                    <li>2007, University</li>
-                    <li>2023, Manual Testing Course</li>
-                    <li>2024, HTML for JS Developers</li>
+                    <li>2024, RSS: JavaScript / Front-end Developer - in progress</li>
+                    <li>2024, HTML for JS Developers - sertificated</li>
+                    <li>2024, Hexlet: Основы JavaScript</li>
+                    <li>2023, Manual Testing Course - sertificated</li>
+                    <li>2007, Pridnestrovian State University named after T.G. Shevchenko - engineering diploma</li>
                 </ul>
             </section>
 
@@ -103,8 +111,8 @@
 
     <footer class="footer">
         <div class="footer-list">
-            <span class="footer-item">Made by Tanya-Gro in 2024</span>
-            <a class="footer-item" href="https://github.com/Tanya-Gro"><b>My GitHub</b></a>
+            <span class="footer-item">Produse by Tanya-Gro, July 2024</span>
+            <a class="footer-item" href="https://github.com/Tanya-Gro">My GitHub</a>
             <a class="footer-item" href="https://rs.school/courses/javascript"><img src="./assets/rs-school-logo.svg"
                     class="rsslogo" alt="RSS Logo"></a>
         </div>
